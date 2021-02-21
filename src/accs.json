@@ -1,0 +1,8 @@
+[
+    {"login": "admin", "pass": "admin", "name": "Artyom Filatov", "disc": "Hello, my Friend"},
+    {"login": "neadmin", "pass": "neadmin"},
+    {"login": "user", "pass": "user"},
+    {"login": "Rachel", "pass": "123456"},
+    {"login": "Hacker", "pass": "654321"},
+    {"login": "error", "pass": "error"}
+]
