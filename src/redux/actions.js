@@ -1,4 +1,4 @@
-import { LOAD_DATA, LOGIN, LOGIN_CHECK } from "./types"
+import { CHANGE_OFF_IS_PROFILE, LOAD_DATA, LOGIN, LOGIN_CHECK } from "./types"
 
 export const login = (login, pass) => {
     return {
@@ -19,5 +19,11 @@ export const loadData = (token) => {
     return {
         type: LOAD_DATA,
         token
+    }
+}
+
+export const changeOffIsProfile = () => {
+    return {
+        type: CHANGE_OFF_IS_PROFILE
     }
 }

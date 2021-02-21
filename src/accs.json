@@ -1,8 +1,8 @@
 [
     {"login": "admin", "pass": "admin", "name": "Artyom Filatov", "disc": "Hello, my Friend"},
-    {"login": "neadmin", "pass": "neadmin"},
-    {"login": "user", "pass": "user"},
-    {"login": "Rachel", "pass": "123456"},
-    {"login": "Hacker", "pass": "654321"},
-    {"login": "error", "pass": "error"}
+    {"login": "neadmin", "pass": "neadmin", "name": "Dmitry Sacol", "disc": "It's not fake acc"},
+    {"login": "user", "pass": "user", "name": "Jackson Smit", "disc": "U.S.A is right!"},
+    {"login": "Rachel", "pass": "123456", "name": "Rachel Bake", "disc": "xd"},
+    {"login": "Hacker", "pass": "654321", "name": "Fake Fake", "disc": "I'm not a hacker"},
+    {"login": "error", "pass": "error", "name": "error error", "disc": "error"}
 ]
