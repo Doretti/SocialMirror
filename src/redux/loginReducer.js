@@ -6,7 +6,8 @@ import jwt from 'jsonwebtoken'
 
 const initialState = {
     token: undefined,
-    auth: false
+    auth: false,
+    id: ''
 }
 
 const loginReducer = (state = initialState, action) => {
@@ -17,7 +18,7 @@ const loginReducer = (state = initialState, action) => {
             if (account.length > 0) {
                 token = jwt.sign(account[0], secret.secret)
                 localStorage.setItem('token', token)
-                return {...state, token: token, auth: true}
+                return {...state, token: token, auth: true, id: account[0].id}
             }
             window.alertMessage('Неверный логин или пароль')
             return state

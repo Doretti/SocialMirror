@@ -1,8 +1,8 @@
 [
-    {"login": "admin", "pass": "admin", "name": "Artyom Filatov", "disc": "Hello, my Friend"},
-    {"login": "neadmin", "pass": "neadmin", "name": "Dmitry Sacol", "disc": "It's not fake acc"},
-    {"login": "user", "pass": "user", "name": "Jackson Smit", "disc": "U.S.A is right!"},
-    {"login": "Rachel", "pass": "123456", "name": "Rachel Bake", "disc": "xd"},
-    {"login": "Hacker", "pass": "654321", "name": "Fake Fake", "disc": "I'm not a hacker"},
-    {"login": "error", "pass": "error", "name": "error error", "disc": "error"}
+    {"login": "admin", "pass": "admin", "id": "0", "name": "Artyom Filatov", "disc": "Hello, my Friend", "avatar": "https://image.freepik.com/free-vector/anime-girl-character_146237-78.jpg"},
+    {"login": "neadmin", "pass": "neadmin", "id": "1", "name": "Dmitry Sacol", "disc": "It's not fake acc", "avatar": "https://image.freepik.com/free-vector/kawaii-anime-manga-girl-wearing-sailor-student-uniform-school-girl-japan-anime-girl-avatar-illustration_77116-410.jpg"},
+    {"login": "user", "pass": "user", "id": "2", "name": "Jackson Smit", "disc": "U.S.A is right!", "avatar": "https://st.overclockers.ru/legacy/blog/86434/102766_O.jpg"},
+    {"login": "Rachel", "pass": "123456", "id": "3", "name": "Rachel Bake", "disc": "xd", "avatar": "https://image.freepik.com/free-vector/anime-girl-character_146237-78.jpg"},
+    {"login": "Hacker", "pass": "654321", "id": "4", "name": "Fake Fake", "disc": "I'm not a hacker", "avatar": "https://image.freepik.com/free-vector/anime-girl-character_146237-78.jpg"},
+    {"login": "error", "pass": "error", "id": "5", "name": "error error", "disc": "error", "avatar": "https://image.freepik.com/free-vector/anime-girl-character_146237-78.jpg"}
 ]

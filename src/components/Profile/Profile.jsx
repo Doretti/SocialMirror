@@ -10,7 +10,7 @@ const Profile = (props) => {
     return (
         <div className={s.wrapper}>
             <div className={s.image}>
-                <img src="https://i.kym-cdn.com/photos/images/facebook/001/411/258/c1e.jpg" alt=""/>
+                <img src={props.avatar} alt=""/>
             </div>
             <div className={s.nameAndDisc}>
                 <div className={s.name}>
@@ -27,7 +27,8 @@ const Profile = (props) => {
 const mapStateToProps = state => {
     return {
         name: state.profile.name,
-        disc: state.profile.disc
+        disc: state.profile.disc,
+        avatar: state.profile.avatar
     }
 }
 

@@ -1,0 +1,11 @@
+.message {
+  background-color: #1a1e2b;
+  padding: 6px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+.myMessage {
+  text-align: right;
+}

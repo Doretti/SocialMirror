@@ -7,10 +7,11 @@
 }
 
 .messages {
-  width: 100%;
+  max-width: 100%;
   background-color: #43506bd8;
   padding: 10px;
-  min-height: 550px;
+  height: calc(100vh - 300px);
+  overflow: auto;
 }
 
 .inputs {
@@ -44,4 +45,18 @@
 
 .inputs button:active {
   border: 1px solid #4d5b7a;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1a1e2b;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #252a3a;
 }

@@ -1,4 +1,4 @@
-import { CHANGE_OFF_IS_PROFILE, LOAD_DATA, LOGIN, LOGIN_CHECK } from "./types"
+import { CHANGE_LOCAL_MESSAGE, CHANGE_OFF_IS_PROFILE, LOAD_DATA, LOAD_MESSAGES_DATA, LOGIN, LOGIN_CHECK } from "./types"
 
 export const login = (login, pass) => {
     return {
@@ -25,5 +25,12 @@ export const loadData = (token) => {
 export const changeOffIsProfile = () => {
     return {
         type: CHANGE_OFF_IS_PROFILE
+    }
+}
+
+export const changeLocalMessage = (symbol) => {
+    return {
+        type: CHANGE_LOCAL_MESSAGE,
+        symbol
     }
 }
