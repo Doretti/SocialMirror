@@ -2,18 +2,19 @@ import { connect } from 'react-redux'
 import s from './Message.module.css'
 
 const Message = (props) => {
-    console.log(props.myId);
-    console.log(props.id);
     return (
-        <div className={props.myId === props.id ? s.message + ' ' + s.myMessage : s.message}>
-            {props.message}
+        <div className={s.wrapper}>
+            <div className={s.avatar}>
+                <img src={props.avatar}/>
+            </div>
+            <div className={s.message}>{props.message}</div>
         </div>
     )
 }
 
 const mapStateToProps = state => {
     return {
-            myId: state.login.id
+            
     }
 }
 

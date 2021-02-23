@@ -1,32 +1,29 @@
 import { connect } from 'react-redux'
 import s from './Messages.module.css'
-import { changeOffIsProfile, changeLocalMessage } from '../../redux/actions'
+import { changeOffIsProfile, changeLocalMessage, addMessage } from '../../redux/actions'
 import Message from './Message/Message'
 
 const Messages = props => {
 
     props.changeOffIsProfile()
-    if (props.messages.length === 0) {
-        props.loadMessagesData()
-    }
-    console.log(props.messages);
-
-    const prevent = (e) => {
-        e.preventDefault()
-    }
 
     const changeInput = (e) => {
         props.changeLocalMessage(e.target.value)
+    }
+
+    const addMessage = (e) => {
+        e.preventDefault()
+        props.addMessage(props.id)
     }
 
     return (
         <div className={s.wrapper}>
             <div className={s.messages}>
                 {props.messages.map(msg => {
-                    return <Message id={msg.id} message={msg.message}/>
+                    return <Message avatar={msg.avatar} id={msg.id} message={msg.message}/>
                 })}
             </div>
-            <form onSubmit={prevent} className={s.inputs}>
+            <form onSubmit={addMessage} className={s.inputs}>
                 <input onChange={changeInput} value={props.localMessage} type="text"/>
                 <button>Send</button>
             </form>
@@ -37,13 +34,15 @@ const Messages = props => {
 const mapStateToProps = state => {
     return {
         localMessage: state.messages.localMessage,
-        messages: state.messages.messages
+        messages: state.messages.messages,
+        id: state.login.id
     }
 }
 
 const mapDispatchToProps = {
     changeOffIsProfile,
-    changeLocalMessage
+    changeLocalMessage,
+    addMessage
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Messages)

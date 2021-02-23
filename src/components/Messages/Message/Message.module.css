@@ -6,6 +6,15 @@
   word-break: break-word;
 }
 
-.myMessage {
-  text-align: right;
+.avatar img {
+  width: 36px;
+  height: 36px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
 }

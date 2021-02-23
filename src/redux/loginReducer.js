@@ -27,7 +27,7 @@ const loginReducer = (state = initialState, action) => {
             let tokenCheck = jwt.verify(action.token, secret.secret)
             let accountCheck = db.filter(acc => acc.login === tokenCheck.login && acc.pass === tokenCheck.pass )
             if (accountCheck[0]) {
-                return {...state, auth: true}
+                return {...state, auth: true, id: accountCheck[0].id}
             }
             return state
 

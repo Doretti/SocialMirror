@@ -1,5 +1,5 @@
 [
-    {"message": "Heelo", "id": "1"},
-    {"message": "How ar u?", "id": "2"},
-    {"message": "xd", "id": "0"}
+    {"message": "Heelo", "id": "1", "avatar": "https://image.freepik.com/free-vector/kawaii-anime-manga-girl-wearing-sailor-student-uniform-school-girl-japan-anime-girl-avatar-illustration_77116-410.jpg", "name": "Dmitry"},
+    {"message": "How ar u?", "id": "2", "avatar": "https://st.overclockers.ru/legacy/blog/86434/102766_O.jpg", "name": "Jackson"},
+    {"message": "xd", "id": "0", "avatar": "https://image.freepik.com/free-vector/anime-girl-character_146237-78.jpg", "name": "Artyom"}
 ]
