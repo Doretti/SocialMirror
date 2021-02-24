@@ -1,4 +1,4 @@
-import { ADD_MESSAGE, CHANGE_LOCAL_MESSAGE } from "./types"
+import { ADD_MESSAGE, CHANGE_LOCAL_MESSAGE, REMOVE_MESSAGE } from "./types"
 import accs from '../accs.json'
 import messages from '../messages.json'
 
@@ -28,6 +28,10 @@ const MessagesReducer = (state = initialState, action) => {
                 avatar: sender.avatar,
                 name: firstName
             }), localMessage: ''}
+
+        case REMOVE_MESSAGE:
+            const newMessages = state.messages.filter(arr => arr != state.messages[action.index])
+            return {...state, messages: newMessages}
 
         default: return state
     }

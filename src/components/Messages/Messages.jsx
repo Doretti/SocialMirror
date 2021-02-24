@@ -19,8 +19,8 @@ const Messages = props => {
     return (
         <div className={s.wrapper}>
             <div className={s.messages}>
-                {props.messages.map(msg => {
-                    return <Message avatar={msg.avatar} id={msg.id} message={msg.message}/>
+                {props.messages.map((msg, index) => {
+                    return <Message index={index} name={msg.name} avatar={msg.avatar} id={msg.id} message={msg.message}/>
                 })}
             </div>
             <form onSubmit={addMessage} className={s.inputs}>

@@ -1,4 +1,4 @@
-import { ADD_MESSAGE, CHANGE_LOCAL_MESSAGE, CHANGE_OFF_IS_PROFILE, LOAD_DATA, LOAD_MESSAGES_DATA, LOGIN, LOGIN_CHECK } from "./types"
+import { ADD_MESSAGE, CHANGE_LOCAL_MESSAGE, CHANGE_OFF_IS_PROFILE, LOAD_DATA, LOAD_MESSAGES_DATA, LOGIN, LOGIN_CHECK, REMOVE_MESSAGE } from "./types"
 
 export const login = (login, pass) => {
     return {
@@ -39,5 +39,12 @@ export const addMessage = (id) => {
     return {
         type: ADD_MESSAGE,
         id
+    }
+}
+
+export const removeMessage = (index) => {
+    return {
+        type: REMOVE_MESSAGE,
+        index
     }
 }

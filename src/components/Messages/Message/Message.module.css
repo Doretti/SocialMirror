@@ -17,4 +17,31 @@
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: space-between;
+}
+
+.messageWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.modifyMessage {
+  display: flex;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.delete {
+  margin-left: 4px;
+  color: #ff6666;
+  cursor: pointer;
+}
+
+.edit {
+  color: #63abe6;
+  cursor: pointer;
+}
+
+.wrapper:hover .modifyMessage {
+  opacity: 1;
 }
